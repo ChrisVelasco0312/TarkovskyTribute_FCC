@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+/* Title of tribute page */
+div#title {
+  margin: 10% 0px;
+  font-family: "Vollkorn", serif;
+}
+div#title > h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1.8px;
+}
+div#title > hr {
+  margin: 10px 0px;
+  border: 1.5px solid #b9b9b9;
+  width: 300px;
+}
+div#title > h4 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 1.4px;
+}
+
+/* ---------------------- */
+
+/* image settigns */
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+
+#img-div > #image {
+  width: 95%;
+}
+
+#img-div > #image-caption {
+  font-family: "Vollkorn", serif;
+  font-weight: 400;
+  font-style: italic;
+  align-self: flex-start;
+  padding: 10px 20px 10px 35px;
+}
+/* --------------------------- */
+
+/* Tribute Info */
+section#tribute-info {
+  width:70%;
+  margin-top: 76px;
+  margin-bottom: 76px;
+  align-self: flex-end;
+}
+
+section#tribute-info > h1 {
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+
+section#tribute-info > div.note {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+section#tribute-info > div.note > .year {
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-style: italic;
+  align-self: center;
+  margin-right: 30px;
+}
+
+section#tribute-info > div.note > .description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  letter-spacing: 1.1px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* ------------------------------ */
+
+/* Final Link */
+
+div.invitation{
+  width:300px;
+  margin-bottom:74px;
+  align-self: flex-end;
+}
+div.invitation > p {
+  font-family: "Vollkorn", serif;
+}
+
+div.invitation > p > a {
+  color: #333;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* QUOTE */
+
+#quote {
+  display: flex;
+  width: 100%;
+  margin-bottom: 74px;
+  justify-content: flex-end;
+}
+#quote > p {
+  max-width: 320px;
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: right;
+}
+#quote > p > span {
+  font-weight: 700;
+}
+
+/* Brand */
+
+.brand {
+  position: fixed;
+  width: 150px;
+  bottom: 0;
+  right: 0;
+  background: #333;
+  color: white;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-family: "Vollkorn", serif;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  text-align: center;
+  opacity: 0.2;
+  cursor: pointer;
+
+  transition: 1s ease-in-out;
+}
+
+.brand:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE SETTINGS */
+
+@media (max-width: 800px){
+  section#tribute-info {
+    width:100%;
+    margin-top: 76px;
+    margin-bottom: 76px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 630px){
+  section#tribute-info {
+    width:100%;
+    margin-top: 76px;
+    margin-bottom: 76px;
+    align-self: center;
+  }
+  section#tribute-info > div.note > .description {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    text-align: left;
+    text-align-last: left;
+  }
+
+  div.invitation{
+    width:100%;
+    margin-bottom:74px;
+    align-self: center;
+  }
+
+  #img-div > #image-caption {
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    font-style: italic;
+    align-self: center;
+    padding: 10px 20px 10px 35px;
+  }
+}
